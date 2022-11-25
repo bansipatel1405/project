@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="nav">
+            <div class="nav-left">
+                <img src="../laphinos/img/lapinoz-logo.png" alt="" width="200px">
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">oue story</a></li>
+                    <li><a href="">store locator</a></li>
+                    <li><a href="">franchies enqiury</a></li>
+                    <li><a href="">order online</a></li>
+                    <li><a href="">contact us</a></li>
+                    <button>login</button>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="../laphinos/img/banner1.jpg" alt="" width="100%">
+
+            <div class="back"></div>
+            <div class="contant">
+                <h1>more than 400+ outlets</h1>
+                <span>live across india</span>
+                <h2>order pizza online in youe area</h2>
+
+                <div class="form">
+                    <select name="city" id="city">
+                        <option value="" selected="" disabled="" hidden="">Select Your City</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Ambala Cantt">Ambala Cantt</option>
+                        <option value="Ambala City">Ambala City</option>
+                        <option value="Amreli">Amreli</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Anand">Anand</option>
+                        <option value="Ankleshwar">Ankleshwar</option>
+                        <option value="Ayodhya">Ayodhya</option>
+                        <option value="Azamgarh">Azamgarh</option>
+                        <option value="Baddi">Baddi</option>
+                        <option value="Bahraich">Bahraich</option>
+                        <option value="Bardoli">Bardoli</option>
+                        <option value="Batala">Batala</option>
+                        <option value="Bathinda">Bathinda</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Bharuch">Bharuch</option>
+                        <option value="Bhavnagar">Bhavnagar</option>
+                        <option value="Bhilai">Bhilai</option>
+                        <option value="Bhilwara">Bhilwara</option>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Bhuj">Bhuj</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Bilaspur">Bilaspur</option>
+                        <option value="Bilimora">Bilimora</option>
+                        <option value="Bokaro">Bokaro</option>
+                        <option value="Borsad">Borsad</option>
+                        <option value="Botad">Botad</option>
+                        <option value="Budaun">Budaun</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Chikhli">Chikhli</option>
+                        <option value="Dahod">Dahod</option>
+                        <option value="Daman">Daman</option>
+                        <option value="Dasuya">Dasuya</option>
+                        <option value="Deesa">Deesa</option>
+                        <option value="Dehri">Dehri</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Derabassi">Derabassi</option>
+                        <option value="Dwarka Gujarat">Dwarka Gujarat</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Fatehgarh Sahib">Fatehgarh Sahib</option>
+                        <option value="Ferozepur">Ferozepur</option>
+                        <option value="Gandhidham">Gandhidham</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                        <option value="Ghaziabad">Ghaziabad</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Godhra">Godhra</option>
+                        <option value="Gondal">Gondal</option>
+                        <option value="Gorakhpur">Gorakhpur</option>
+                        <option value="Greater Noida">Greater Noida</option>
+                        <option value="Gurdaspur">Gurdaspur</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Gurugram">Gurugram</option>
+                        <option value="Guwahati">Guwahati</option>
+                        <option value="Gwalior">Gwalior</option>
+                        <option value="Haldwani">Haldwani</option>
+                        <option value="Halol">Halol</option>
+                        <option value="Himatnagar">Himatnagar</option>
+                        <option value="Hoshiarpur">Hoshiarpur</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Jabalpur">Jabalpur</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jalandhar">Jalandhar</option>
+                        <option value="Jammu">Jammu</option>
+                        <option value="Jamnagar">Jamnagar</option>
+                        <option value="Jamshedpur">Jamshedpur</option>
+                        <option value="Jaunpur">Jaunpur</option>
+                        <option value="Jetpur">Jetpur</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Junagadh">Junagadh</option>
+                        <option value="Kadi">Kadi</option>
+                        <option value="Kakinada">Kakinada</option>
+                        <option value="Kalol">Kalol</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Karjan">Karjan</option>
+                        <option value="Karnal">Karnal</option>
+                        <option value="Kasol">Kasol</option>
+                        <option value="Kharar">Kharar</option>
+                        <option value="Kochi">Kochi</option>
+                        <option value="Kolhapur">Kolhapur</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Limbdi">Limbdi</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Ludhiana">Ludhiana</option>
+                        <option value="Mahuva">Mahuva</option>
+                        <option value="Maliya Miiyana">Maliya Miiyana</option>
+                        <option value="Malout">Malout</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Mandi">Mandi</option>
+                        <option value="Mandi Gobindgarh">Mandi Gobindgarh</option>
+                        <option value="Mangalore">Mangalore</option>
+                        <option value="Meerut">Meerut</option>
+                        <option value="Mehsana">Mehsana</option>
+                        <option value="Mohali">Mohali</option>
+                        <option value="Moradabad">Moradabad</option>
+                        <option value="Morbi">Morbi</option>
+                        <option value="Mount Abu">Mount Abu</option>
+                        <option value="Mukerian">Mukerian</option>
+                        <option value="Muktsar">Muktsar</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Muzaffarpur">Muzaffarpur</option>
+                        <option value="Nadiad">Nadiad</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Narmada">Narmada</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Navsari">Navsari</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Palanpur">Palanpur</option>
+                        <option value="Pali">Pali</option>
+                        <option value="Panchkula">Panchkula</option>
+                        <option value="Panipat">Panipat</option>
+                        <option value="Patan Gujarat">Patan Gujarat</option>
+                        <option value="Pathankot">Pathankot</option>
+                        <option value="Patiala">Patiala</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Pinjore">Pinjore</option>
+                        <option value="Porbandar">Porbandar</option>
+                        <option value="Prayagraj">Prayagraj</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Raebareli">Raebareli</option>
+                        <option value="Raipur">Raipur</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Rajpura">Rajpura</option>
+                        <option value="Ranchi">Ranchi</option>
+                        <option value="Saputara">Saputara</option>
+                        <option value="Secundrabad">Secundrabad</option>
+                        <option value="Shirdi">Shirdi</option>
+                        <option value="Sikar">Sikar</option>
+                        <option value="Siliguri">Siliguri</option>
+                        <option value="Solan">Solan</option>
+                        <option value="Sri Ganganagar">Sri Ganganagar</option>
+                        <option value="Sundernagar">Sundernagar</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Surendranagar">Surendranagar</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="Ujjain">Ujjain</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Valsad">Valsad</option>
+                        <option value="Vapi">Vapi</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Virar">Virar</option>
+                        <option value="Visnagar">Visnagar</option>
+                        <option value="Vyara">Vyara</option>
+                        <option value="Yamunanagar">Yamunanagar</option>
+                        <option value="Zirakpur">Zirakpur</option>
+                    </select>
+                    <select name="" id="outlet">
+                        <option value="" selected="" disabled="" hidden="">Select Your Favourite Outlet</option>
+                    </select>
+                </div>
+                <h3>download the app sameless experience</h3>
+                <button class="btn">download</button>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- deals and offer start -->
+    <div class="offer">
+        <h3>deals and offer</h3>
+    </div>
+    <div class="deals-offer">
+        <img src="../laphinos/img/deals-banner.jpg" alt="" width="400">
+        <img src="../laphinos/img/deals-banner-two.jpg" alt="" width="400">
+        <img src="../laphinos/img/deals-banner-three.jpg" alt="" width="400">
+    </div>
+    <!-- deals and ofer end -->
+    <!-- explore start -->
+    <div class="section">
+        <div class="explor">
+            <h3>explore</h3>
+        </div>
+        <ul class="explore-menu">
+            <li><a href="">
+                    <div class="menu-placeholder">
+                        <div class="t1">
+                            <img src="../laphinos/img/image-644662-1664646282 (1).png" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <h4 class="explore-title">veg pizza</h4>
+                </a></li>
+
+            <li><a href="">
+                    <div class="menu-placeholder">
+                        <div class="t1">
+                            <img src="../laphinos/img/image-321364-1664646287.png" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <h4 class="explore-title">Classic Pizzas For Classic Maniacs</h4>
+                </a></li>
+
+            <li><a href="">
+                    <div class="menu-placeholder">
+                        <div class="t1">
+                            <img src="../laphinos/img/image-3.png" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <h4 class="explore-title">Sides</h4>
+                </a></li>
+
+            <li><a href="">
+                    <div class="menu-placeholder">
+                        <div class="t1">
+                            <img src="../laphinos/img/image-4.png" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <h4 class="explore-title">Classic Pizza Pack Of 4</h4>
+                </a></li>
+            <li><a href="">
+                    <div class="menu-placeholder test">
+                        <div class="t1">
+                            <img src="../laphinos/img/image-5.png" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <h4 class="explore-title">Pasta</h4>
+                </a></li>
+            <li><a href="">
+                    <div class="menu-placeholder">
+                        <img src="../laphinos/img/image-6.gif" alt="" height="100%" width="100%">
+                    </div>
+                    <h4 class="explore-title">September Flat Deal</h4>
+                </a></li>
+
+        </ul>
+    </div>
+    <!-- explore end -->
+    <!-- best sellaer start -->
+    <div class="best">
+        <h3>best seller</h3>
+    </div>
+    <div class="sale">
+        <div class="containor">
+            <div class="best-seller">
+                <img src="../laphinos/img/best-1.jpg" alt="" width="307" height="274">
+                <div class="item-detailes">
+                    <h4>country side pizza</h4>
+                    <p>a country side mood goes well....</p>
+                </div>
+            </div>
+        </div>
+        <div class="containor">
+            <div class="best-seller">
+                <img src="../laphinos/img/best-2.jpg" alt="" width="307" height="274">
+                <div class="item-detailes">
+                    <h4>Paneer Tikka Butter Masala Pizza</h4>
+                    <p>An indian Speciality on a La Pinoz ...</p>
+                </div>
+            </div>
+        </div>
+        <div class="containor">
+            <div class="best-seller">
+                <img src="../laphinos/img/best-3.jpg" alt="" width="307" height="274">
+                <div class="item-detailes">
+                    <h4>Farm Villa Pizza</h4>
+                    <p>The freshness of capsicum, tomatoes...</p>
+                </div>
+            </div>
+        </div>
+        <div class="containor">
+            <div class="best-seller">
+                <img src="../laphinos/img/best-4.jpg" alt="" width="307" height="274">
+                <div class="item-detailes">
+                    <h4>Korma Special Pizza</h4>
+                    <p>Need some Indian Zing to your pizza...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- best seller end -->
+    <!-- newly launched store start -->
+    <div class="store">
+        <div class="upper-heading">
+            <h3>newly launched store</h3>
+        </div>
+        <div class="store-main">
+            <section class="store-div">
+                <div class="store-div-top">
+                    <h4>Mumbai</h4>
+                    <p>malad</p>
+                </div>
+                <div class="store-div-bottom">
+                    <img src="../laphinos/img/lapinoz.png" alt="" height="40" width="40">
+                    <div class="store-detalies">
+                        <span>la phino'z pizza</span>
+                    </div>
+                    <div class="phon">
+                        <img src="../laphinos/img/phone-icn.png" alt="" height="20" width="20">
+                    </div>
+                </div>
+            </section>
+            <section class="store-div">
+                <div class="store-div-top">
+                    <h4>Gopal Enclave</h4>
+                    <p>batala</p>
+                </div>
+                <div class="store-div-bottom">
+                    <img src="../laphinos/img/lapinoz.png" alt="" height="40" width="40">
+                    <div class="store-detalies">
+                        <span>la phino'z pizza</span>
+                    </div>
+                    <div class="phon">
+                        <img src="../laphinos/img/phone-icn.png" alt="" height="20" width="20">
+                    </div>
+                </div>
+            </section>
+            <section class="store-div">
+                <div class="store-div-top">
+                    <h4>Wanowrie, Salunke Vihar</h4>
+                    <p>pune</p>
+                </div>
+                <div class="store-div-bottom">
+                    <img src="../laphinos/img/lapinoz.png" alt="" height="40" width="40">
+                    <div class="store-detalies">
+                        <span>la phino'z pizza</span>
+                    </div>
+                    <div class="phon">
+                        <img src="../laphinos/img/phone-icn.png" alt="" height="20" width="20">
+                    </div>
+                </div>
+            </section>
+            <section class="store-div">
+                <div class="store-div-top">
+                    <h4>Chunni Kalan</h4>
+                    <p>Fatehgarh Sahib</p>
+                </div>
+                <div class="store-div-bottom">
+                    <img src="../laphinos/img/lapinoz.png" alt="" height="40" width="40">
+                    <div class="store-detalies">
+                        <span>la phino'z pizza</span>
+                    </div>
+                    <div class="phon">
+                        <img src="../laphinos/img/phone-icn.png" alt="" height="20" width="20">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- newly launched store end -->
+    <!-- enqiries start -->
+    <div class="banner-enqiries">
+        <img src="../laphinos/img/image-286469-1661849538.jpeg" alt="">
+    </div>
+
+
+    <!-- enquries end -->
+    <!-- what foodies say start -->
+    <div class="commen-heading">
+        <h3>let's heare what foodies say</h3>
+    </div>
+    <div class="cite">
+        <div class="bubble">
+            <blockquote>
+                I was blown away by the flavors, the pizzas were amazing. Can't wait to order again. Highly recommended.
+                Tastiest dinner I've had since pandemic happened.
+            </blockquote>
+            <div></div>
+            <cite>shreya thakker</cite>
+        </div>
+        <div class="bubble">
+            <blockquote>Wow! Lapino’z is hands down the BEST pizza place in town. From the fast delivery service to all
+                the types of pizza, pasta, and garlic bread your heart desires.</blockquote>
+            <div></div>
+            <cite>sahil sood</cite>
+        </div>
+    </div>
+    <!-- what foodies say end -->
+    <!-- find laphinoes location neare you stared -->
+    <section class="lapinoes-outlet">
+        <div class="container">
+            <div class="commen-heading-location">
+                <h3>find lapinoes location near you</h3>
+            </div>
+        </div>
+        <div class="city-name-outr">
+            <div class="city-name-souter">
+                <p class="city-name-s">A</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Agra</a></li>
+                    <li><a href="">Ahmedabad </a></li>
+                    <li><a href=""> Ajmer</a></li>
+                    <li><a href=""> Ambala Cantt</a></li>
+                    <li><a href="">Ambala City </a></li>
+                    <li><a href="">Amreli</a></li>
+                    <li><a href="">Amritsar</a></li>
+                    <li><a href=""> Anand </a></li>
+                    <li><a href="">Ankleshwar</a></li>
+                    <li><a href="">Ayodhya</a></li>
+                    <li><a href="">Azamgarh</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">B</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Baddi</a></li>
+                    <li><a href="">Bahraich</a></li>
+                    <li><a href="">Bardoli</a></li>
+                    <li><a href="">Batala </a></li>
+                    <li><a href="">Bathinda</a></li>
+                    <li><a href="">Bengaluru </a></li>
+                    <li><a href="">Bharuch</a></li>
+                    <li><a href="">Bhavnagar</a></li>
+                    <li><a href="">Bhilai</a></li>
+                    <li><a href="">Bhilwara </a></li>
+                    <li><a href="">Bhopal</a></li>
+                    <li><a href="">Bhuj</a></li>
+                    <li><a href="">Bikaner</a></li>
+                    <li><a href="">bilaspur</a></li>
+                    <li><a href="">bilimora</a></li>
+                    <li><a href="">bokaro</a></li>
+                    <li><a href="">borsad</a></li>
+                    <li><a href="">budaun</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">C</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">chandigrah</a></li>
+                    <li><a href="">chennai</a></li>
+                    <li><a href="">chikhli</a></li>
+
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">D</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">dahod</a></li>
+                    <li><a href="">daman</a></li>
+                    <li><a href="">dasuya</a></li>
+                    <li><a href="">deesa</a></li>
+                    <li><a href="">dehri</a></li>
+                    <li><a href="">derabassi</a></li>
+                    <li><a href="">dwaeka gujrat</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">F</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">faridabad</a></li>
+                    <li><a href="">fatehgrah sahib</a></li>
+                    <li><a href="">ferozepur</a></li>
+
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">G</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">gandhidham</a></li>
+                    <li><a href="">gandhinagar</a></li>
+                    <li><a href="">ghaziabad</a></li>
+                    <li><a href="">goa</a></li>
+                    <li><a href="">godhra</a></li>
+                    <li><a href="">gondal</a></li>
+                    <li><a href="">gorakhpur</a></li>
+                    <li><a href="">greater nodida</a></li>
+                    <li><a href="">gurdaspur</a></li>
+                    <li><a href="">gurgaon</a></li>
+                    <li><a href="">gurugam</a></li>
+                    <li><a href="">guwahati</a></li>
+                    <li><a href="">gwalior</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">H</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">haldwani</a></li>
+                    <li><a href="">halol</a></li>
+                    <li><a href="">himatnagar</a></li>
+                    <li><a href="">hoshiarpur</a></li>
+                    <li><a href="">hyderabad</a></li>
+
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">I</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">indore</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">J</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Jabalpur</a></li>
+                    <li><a href="">Jaipur</a></li>
+                    <li><a href="">Jalandhar</a></li>
+                    <li><a href="">Jammu</a></li>
+                    <li><a href="">Jamnagar</a></li>
+                    <li><a href="">Jamshedpur</a></li>
+                    <li><a href="">Jaunpur</a></li>
+                    <li><a href="">Jetpur</a></li>
+                    <li><a href="">Jodhpur</a></li>
+                    <li><a href="">Junagadh</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">K</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Kadi</a></li>
+                    <li><a href="">Kakinada</a></li>
+                    <li><a href="">Kalol</a></li>
+                    <li><a href="">Kanpur</a></li>
+                    <li><a href="">Karjan</a></li>
+                    <li><a href="">Karnal</a></li>
+                    <li><a href="">Kasol</a></li>
+                    <li><a href="">Kharar</a></li>
+                    <li><a href="">Kochi</a></li>
+                    <li><a href="">Kolhapur</a></li>
+                    <li><a href="">Kolkata</a></li>
+                    <li><a href="">Kota</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">L</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Limbdi</a></li>
+                    <li><a href="">Lucknow</a></li>
+                    <li><a href="">Ludhiana</a></li>
+
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">M</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Mahuva</a></li>
+                    <li><a href="">maliya Miiyana</a></li>
+                    <li><a href="">Malout</a></li>
+                    <li><a href="">Manali</a></li>
+                    <li><a href="">Mandi</a></li>
+                    <li><a href="">mandi Gobindgarh</a></li>
+                    <li><a href="">Mangalore</a></li>
+                    <li><a href="">Meerut</a></li>
+                    <li><a href="">Mehsana</a></li>
+                    <li><a href="">Mohali</a></li>
+                    <li><a href="">Moradabad</a></li>
+                    <li><a href="">Morbi</a></li>
+                    <li><a href="">Mount abu</a></li>
+                    <li><a href="">Mukerian</a></li>
+                    <li><a href="">Muktsar</a></li>
+                    <li><a href="">Mumbai</a></li>
+                    <li><a href="">Muzaffarpur</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">N</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Nadiad</a></li>
+                    <li><a href="">Nagpur</a></li>
+                    <li><a href="">Narmada</a></li>
+                    <li><a href="">Nashik</a></li>
+                    <li><a href="">navi Mumbai</a></li>
+                    <li><a href="">Navsari</a></li>
+                    <li><a href="">Noida</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">P</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Palanpur</a></li>
+                    <li><a href="">Pali</a></li>
+                    <li><a href="">Panchkula</a></li>
+                    <li><a href="">Panipat</a></li>
+                    <li><a href="">patan gujrat</a></li>
+                    <li><a href="">Pathankot</a></li>
+                    <li><a href="">Patiala</a></li>
+                    <li><a href="">Patna</a></li>
+                    <li><a href="">pinjore</a></li>
+                    <li><a href="">Porbandar</a></li>
+                    <li><a href="">Prayagraj</a></li>
+                    <li><a href="">pune</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s">R</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Raebareli</a></li>
+                    <li><a href="">Raipur</a></li>
+                    <li><a href="">Rajkot</a></li>
+                    <li><a href="">Rajpura</a></li>
+                    <li><a href="">Ranchi</a></li>
+
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s"> S</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Saputara</a></li>
+                    <li><a href="">Secundrabad</a></li>
+                    <li><a href="">Shirdi</a></li>
+                    <li><a href="">Sikar</a></li>
+                    <li><a href="">Siliguri</a></li>
+                    <li><a href="">solan</a></li>
+                    <li><a href="">sri Ganganagar</a></li>
+                    <li><a href="">Sundernagar</a></li>
+                    <li><a href="">Surat</a></li>
+                    <li><a href="">Surendranagar</a></li>
+
+            </div>
+
+            <div class="city-name-souter">
+                <p class="city-name-s"> U</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Udaipur</a></li>
+                    <li><a href="">Ujjain</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s"> V</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Vadodara</a></li>
+                    <li><a href="">valsad</a></li>
+                    <li><a href="">vapi</a></li>
+                    <li><a href="">varanasi</a></li>
+                    <li><a href="">Virar</a></li>
+                    <li><a href="">Visnagar</a></li>
+                    <li><a href="">vyara</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s"> Y</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Yamunanagar</a></li>
+            </div>
+            <div class="city-name-souter">
+                <p class="city-name-s"> Z</p>
+                <ul class="cities-list-nw">
+                    <li><a href="">Zirakpur</a></li>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- find laphinoes location neare you end -->
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-contener">
+            <div class="row">
+                <div class="link">
+                    <div class="icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        usefull link
+                    </div>
+                    <ul class="item">
+                        <li><a href="">refund policy</a></li>
+                        <li><a href="">term & conditions</a></li>
+                        <li><a href="">privacy pocicy</a></li>
+                        <li><a href="">promo codes</a></li>
+                    </ul>
+                </div>
+                <div class="payment">
+                    <div class="icon">
+                        <i class="fa-solid fa-receipt"></i>
+                        payment methods
+                        <ul class="item-payments">
+                            <a href=""><img src="../laphinos/img/visa.png" alt=""></a>
+                            <a href=""><img src="../laphinos/img/google-pay.png" alt=""></a>
+                            <a href=""><img src="../laphinos/img/paytm.png" alt=""></a>
+                            <a href=""><img src="../laphinos/img/master-card.png" alt=""></a>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="connect">
+                    <div class="icon">
+                        <i class="fa-light fa-at"></i>
+                        connect with us
+                        <div class="social-link">
+                            <a href="https://www.instagram.com/lapinozpizzaindia/?__coig_restricted=1"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="concact-ifo">
+                            <a href="">
+                                <i class="fa-solid fa-envelope"></i>
+                                copenhagenhospitalityandretail@yahoo.com
+                            </a>
+                        </div>
+                        <div class="concact-ifo">
+                            <a href="">
+                                <i class="fa-solid fa-phone"></i>
+                                +91 01762509231
+
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="hr">
+        <div class="copy-right">
+            <h4 class="copy-right-start">
+                made with love in india by <a>ungeage</a>
+            </h4>
+            <h4 class="copy-right-end">copyright.all rides reserved</h4>
+        </div>
+
+        
+
+</body>
+
+</html>
